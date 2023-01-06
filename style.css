@@ -1,0 +1,48 @@
+html{
+    font-family: sans-serif;
+    color: white;
+}
+.banner{
+    vertical-align: top;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    padding: 32px 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+body{
+    background-image: url("https://cms.qz.com/wp-content/uploads/2014/12/night-stars.jpg?quality=80&strip=all&w=4256");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
