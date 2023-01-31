@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        h1 {
+            width: 500px;
+            height: 70px;
+            padding-top: 30px;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            transition: 0.5s;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+        a{
+            color: rgb(158, 158, 158);
+        }
+        .img1{
+            border: 5px solid white;
+            background-color: rgb(36, 36, 36);
+            width: fit-content;
+            position: absolute;
+            transform: translate(825px, -365px);
+        }
+        .img2{
+            border: 5px solid black;
+            width: fit-content;
+            float: right;
+            background-color: white;
+            position: absolute;
+            transform: translate(825px, -55px);
+        }
+    </style>
+</head>
+<title>Fareham Portfolio</title>
+
+<body>
+    
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        <a href="index.html">Home Page</a>
+        <a href="sadlinus.jfif">Linus</a>
+        <a href="https://www.escapefromtarkov.com/" target="_blank">Tarkov</a>
+        <a href="https://www.youtube.com/@AquaFPS" target="_blank">Surprise</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Burger</button>
+        <h1>Burger Waffle Breadcrumbs</h1>
+        <h2>What are those?</h2>
+        <p>Burger menus are the little 3-line icons you see in almost every website nowadays. When you click them, <br>typically a menu of some sort appears to allow for simpler website navigation.
+        <br><br>
+        Waffles are a similar sort of menu, that appear as a 3x3 square icon of dots. Waffles tend to display apps<br>however and are normally used for cloud services.
+        <br><br>
+        Breadcrumbs! Very easy to picture what these are. Breadcrumbs are a sort of 'timeline' of the pages you<br>visit on a site. They're used to make back and forth-ing esier and in general make page browsing more simple.</p>
+        <div class="img1"><img src="waffle.PNG"></div>
+        <h2>Collapsed Sidebar</h2>
+        <p>You can click on the burger menu/bar icon to open the sidebar, and push this content to the right. I think it's quite cool.
+        <br>Additionally, making the menu required JavaScript. In order to familiarise myself with it and understand how it's used to make the menu,<br>I used the <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay" target="_blank">W3Schools</a> example to fiddle around with the items. This helped me understand it a lot better.
+        <br>Having experience in Python and C also made familiarising myself with it easier.</p>
+        <p>To the right are examples of waffles and breadcrumbs in effect.</p>
+        <div class="img2"><img src="breadcrumbs.PNG"></div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+<script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=4f34628d-6d5a-482f-8fda-6a1e07267232"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=8337530a-a171-436f-af64-6c75614cdfb6"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=a0cb56c9-b211-4250-a335-b81077248dd6"></script>
+<script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=482514f8-fa64-407b-b7f6-b1489f0b6197"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=605725dd-f2e2-490e-aced-5e560c6a0b63"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=73b77395-27d2-485a-96b0-81cb19dd0d3f"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=4466b6b2-3f14-43d6-a400-029e03a7f37e"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=23842c87-0d19-472e-9e78-eafa46639d67"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=3139783c-f7e7-49a8-b309-e6b9446a342c"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=cb453015-cb05-4dca-b5aa-63c84984d8ab"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=0d89b63f-566f-48f3-a383-6f5bcdc7c6f5"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=d0570d0d-fa5c-4853-844f-f9bab5a71af2"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=4510e29f-9eb2-403b-9b99-d1b43969a3f1"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=b351f637-3d2e-4d64-aff8-7f63fdf50848"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=1ead1b26-c8ce-4876-848b-96f381ed54b3"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=ac5c02e4-671e-4aad-a873-4334b4758310"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=10bbfc54-7871-48e0-97da-c022df1464f4"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=d06ce98c-47e1-4a3c-8c26-872de7e44e4d"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=65fd62d5-1e18-4403-a93b-e5abff115fc9"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=7e252e0b-3f8c-49ea-a0c8-80194a069fd4"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=5419ebfc-c75f-4d21-96cd-c1077aa40246"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=47d5db53-ce86-4e54-a148-8354ce3a44a9"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=aaeca9b1-fb7c-40e0-adfb-9e7726dbbd2f"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=cb099bbc-3091-4b5a-97d2-f2f441215df1"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=958c7d26-aca2-4b38-9285-c2b3d41af73f"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=a53a8bdd-2d2a-4e02-9e4b-9ad07e8b86bc"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=eb1fe80c-6e73-441e-b5cd-8fe76abfd973"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=20debf82-d69e-4201-bea3-9a5e52f5f902"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=6e9e3231-61a6-4334-87a0-89aa6009a811"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=c1849532-0be0-4204-a893-75ddbfebe13b"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=230d9ded-8661-43ae-ab1d-00cd6b3417f8"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=7ec7cb0c-a09e-465c-8822-5114b8b5f09c"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=9a287bf2-41da-4cae-b518-3f12616dcce6"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=a498abe6-1aa3-4d0c-a95b-b174e70af0fe"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=34aa4f79-ba90-42aa-a225-7406de501a0d"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=986a3dec-c741-456e-8d1a-d4dc39c0c08e"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=1e445338-d741-4f81-9100-f74bff30fc31"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=f1677569-4674-4aef-99c0-53c019ae164c"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=5658bdf9-414b-448b-b0ae-3d3a075b0932"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=357a96e9-ce62-4d79-b28d-4d743bcd3ad3"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=f3299307-b190-4aff-9555-0d62d23fa054"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=54a1282a-01c8-43d2-ba32-5a07d7242adc"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=c0f13240-a2c4-41e2-9ebc-2fc0646668ea"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=f9e88055-ae46-4e66-9edf-42b820e2ab28"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=87b5ae3b-a636-438d-8f3b-cfba98a42a4e"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=deac39d0-94f6-4be4-865b-0d74ec6b5930"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=3050aadc-2dc7-4a94-9ce2-cf3fa2a99f85"></script><script type='text/javascript'  src="https://farehamcollege-my.sharepoint.com/e8af468af1c44bba18f9435103d0a3d48636982cd2f479d7e37ce9765088fa88/inject.js?id=12a66c14-7e53-4186-96ee-169d9af42b7b"></script></body>
+</html>
